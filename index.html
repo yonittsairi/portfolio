@@ -18,22 +18,12 @@
 </head>
 
 <body>
-    <!-- <section class="hero flex justify-center">
-        <img class="profile" src="./assets/images/PROFILE.jpg" alt="">
-        <div class="details">
-            <h1>Hi !
-                <p>
-                    My name is Yonit Tzairi , I am a Frontend developer</p>
-                Coding academy Graduate
-                </p>
-                </p>
-                <a class="my-button go" onclick="dissapear()">My profile</a>
+    <video autoplay muted loop id="myVideo">
+        <source src="assets/images/in_front_of.mov" type="video/mp4">
+    </video>
 
-            </h1>
-        </div>
-    </section> -->
+    <a class="my-button open" onclick="openme()"><i style="font-size: 15px;" class="fa fa-bars"></i></a>
     <div class="page-wraper">
-
         <div class="responsive-nav">
 
             <a class="my-button close" onclick="closeme()">x</a>
@@ -147,7 +137,7 @@
                         <div class="project-dtl">
                             <h3> Soundcloud</h3>
                             <span class="label">react</span>
-                            <span class="label">rudux</span>
+                            <span class="label">redux</span>
 
                             <span class="label">javascript</span>
                             <span class="label">API</span>
@@ -227,15 +217,14 @@
         let x = document.getElementsByClassName("responsive-nav")[0]
         x.classList = "none"
     }
+    function openme() {
+        let x = document.getElementsByClassName("none")[0]
+        x.classList = "responsive-nav"
 
-
-    function dissapear() {
-        let a = document.getElementsByClassName("hero")[0]
-
-        let b = document.getElementsByClassName("page-wraper none")[0]
-        a.classList = "none"
-        b.classList = "page-wraper display"
     }
+
+
+
 
 </script>
 

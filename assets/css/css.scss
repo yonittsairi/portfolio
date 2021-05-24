@@ -149,7 +149,7 @@ svg {
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-template-columns: repeat(6, minmax(80px, 150px));
     grid-template-rows: auto auto;
     grid-gap: 70px;
     // margin: 10px;
@@ -191,7 +191,7 @@ svg {
 }
 .grid-label {
     display: grid;
-    grid-template-columns: repeat(7, 100px);
+    grid-template-columns: repeat(max(4), 100px);
     grid-template-rows: auto;
     gap: 30px;
 }
